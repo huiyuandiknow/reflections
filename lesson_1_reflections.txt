@@ -1,0 +1,30 @@
+Reflections #1
+- How did viewing a diff between two versions help you spot the bug? 
+    - It lists things between what's working and what's not working
+
+- How could having easy access to the entire history of a file make you a more efficient programmer in the long term? 
+    - You can keep a record of changes that your team made at the time, and also keep track of changes 
+      between each edits. If they ever decided to switch back to the old method, then you have a copy of 
+      that as well. Moreover, you can compare the two methods yourself and tell them what may be perform better. 
+
+- What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs 
+  having versions automatically saved, like Google docs does? 
+    - manually commit: 
+        pro: more flexibility, can reflect meaningful/critical changes
+        con: depends on judgement call, may be too small or too big of a chunk for commit, 
+             may not store enough detail 
+
+- Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, 
+  like Google docs, treat each file separately? 
+    - Git enable you to check file changes at a certain time to avoid checking diff files simultaneously for
+      the correct version that you want, whereas in Google docs it only saves the file that has been changed, 
+      so it's file based instead of time based since it does it automatically. 
+      
+- How can you use the commands git log and git diff to view the history of files? 
+   git log gives you a log of changes at each commit with some information, then you can compare it with the previous
+   git diff to compare and see what has changed in the commit (compare the current one with the previous one to see the change
+   done in the current commit) 
+  
+- How might using version control make you more confident to make changes that could break something? 
+  Since you can checkout any of the older versions when something went wrong, you are more likely to 
+  make changes that's new and may or may not work. You are more willing to explore and try other concepts. 
