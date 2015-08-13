@@ -2,4 +2,77 @@ Reflections #3
 - When would you want to use a remote repository rather than keeping all your work local?
   1. When you want to share your work with others. It's easier to edit/share/work with others 
   2. It can serve as a backup of your files, so you still have the files when there's disk failure
-  
+
+- Why might you want to always pull changes manually rather than having Git automatically stay up-to-date
+  with your remote repository?
+  - Depends on the permission, but the remote repo may contains edits from others that you do not want to have 
+    in your local repo
+  - Automatic update may not make sense. For example, you may want to pull changes at logical segments instead of 
+    automatic pulls every 10 minutes or something
+
+    
+- Describe the differences between forks, clones, and branches. When would you use one instead of another?
+    1. forks: 
+        - github specific, you can directly take someone's repo and make changes yourself
+        - People can view the original repo from the link, which gives the original author credits
+    2. clones: 
+        - copies the repo to another repo 
+        - this can be done from local-local, or from local-remote
+    3. branches: 
+        - happens on a single repo
+        - It's like a way to request a brand new working directory
+        - when things doesn't work, you can check out an earlier version 
+        - enables create, list, rename, and delete branches
+        - doesn't allow switching between branches/putting a forked history back together again, so 
+          we need to use git checkout and git merge with this
+    - Use forks when there's a repo online that's good for reference, use clones when 
+      you want to keep a copy of a repo somewhere, use branches when you want to make changes to the repo 
+      but possibly go back to an earlier version of it.       
+        
+- What is the benefit of having a copy of the last known state of the remote stored locally? 
+    - You can compare how much it changed since the last known state and see if you want to do any change
+      to your local file
+      
+- How would you collaborate without using Git or GitHub? What would be easier, and what would be harder? 
+    - Using other file-sharing systems, such as Dropbox, google doc, etc. 
+    - Github advantage: It'll be easier to see the changes since there's commit associated with each changes. 
+                        The pull requests also makes it easier to accept/decline changes the files
+    - Github disadvantage: Everything looks public on github, not sure if there's a privacy setting to hide everything
+                           from others. It's the only disadvantage that I could think of
+
+- When would you want to make changes in a separate branch rather than directly in master? what
+  benefits does each approach have? 
+    - It allows you to compare the two branches and there's always a master branch that you can fall back
+      to when something went wrong
+    - it's a standard practice to make changes in a non-master branch within the fork. 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
